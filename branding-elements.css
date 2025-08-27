@@ -1,0 +1,80 @@
+/* MYTHOFY SOGo Branding - PNG Logo Integration */
+
+/* SOGo Header/Navbar Logo - Light Mode */
+.md-default-theme .navbar-brand img,
+.md-default-theme .sg-navbar-brand img,
+.md-default-theme .sogo-logo {
+  content: url("logos/mythofy-logo-dark-160x40.png") !important;
+  max-height: 40px !important;
+  width: 160px !important;
+  filter: none !important;
+}
+
+/* SOGo Header/Navbar Logo - Dark Mode */
+.md-dark-theme .navbar-brand img,
+.md-dark-theme .sg-navbar-brand img,
+.md-dark-theme .sogo-logo {
+  content: url("logos/mythofy-logo-light-160x40.png") !important;
+  max-height: 40px !important;
+  width: 160px !important;
+  filter: none !important;
+}
+
+/* SOGo Login Page Logo - Light Mode */
+.md-default-theme .loginBox img,
+.md-default-theme .loginContainer img {
+  content: url("logos/mythofy-logo-dark-240x80.png") !important;
+  width: 240px !important;
+  height: 80px !important;
+  margin: 20px auto !important;
+  display: block !important;
+}
+
+/* SOGo Login Page Logo - Dark Mode */
+.md-dark-theme .loginBox img,
+.md-dark-theme .loginContainer img {
+  content: url("logos/mythofy-logo-light-240x80.png") !important;
+  width: 240px !important;
+  height: 80px !important;
+  margin: 20px auto !important;
+  display: block !important;
+}
+
+/* SOGo Small Logo (Footer/Small contexts) - Light Mode */
+.md-default-theme .footer img,
+.md-default-theme .sg-footer img,
+.md-default-theme .small-logo {
+  content: url("logos/mythofy-logo-dark-80x24.png") !important;
+  width: 80px !important;
+  height: 24px !important;
+  opacity: 0.8 !important;
+}
+
+/* SOGo Small Logo (Footer/Small contexts) - Dark Mode */
+.md-dark-theme .footer img,
+.md-dark-theme .sg-footer img,
+.md-dark-theme .small-logo {
+  content: url("logos/mythofy-logo-light-80x24.png") !important;
+  width: 80px !important;
+  height: 24px !important;
+  opacity: 0.8 !important;
+}
+
+/* SOGo Favicon */
+link[rel="icon"],
+link[rel="shortcut icon"] {
+  href: url("logos/mythofy-favicon-32x32.png") !important;
+}
+
+/* Remove SOGo Default Branding Text */
+.sg-md-title:contains("SOGo"),
+.loginPageTitle:contains("SOGo") {
+  display: none !important;
+}
+
+/* Custom MYTHOFY Text Styling */
+.mythofy-brand-text {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--md-primary-500) !important;
+}

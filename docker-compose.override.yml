@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+  sogo-mailcow:
+    volumes:
+      # Mount combined theme CSS
+      - ./data/conf/sogo/mythofy-complete-theme.css:/usr/lib/GNUstep/SOGo/WebServerResources/css/theme-default.css:z
+      
+      # Mount logo directory for CSS access
+      - ./data/conf/sogo/logos:/usr/lib/GNUstep/SOGo/WebServerResources/logos:z
+      
+      # Mount main logo for SOGo interface
+      - ./data/conf/sogo/custom-fulllogo.png:/usr/lib/GNUstep/SOGo/WebServerResources/img/sogo-full.png:z
+      
+      # Mount favicon
+      - ./data/conf/sogo/custom-favicon.ico:/usr/lib/GNUstep/SOGo/WebServerResources/img/favicon.ico:z

@@ -1,0 +1,334 @@
+/* MYTHOFY Phoenix Theme - Advanced Inbox Customizations */
+
+/* Inbox Layout Enhancements */
+.inbox-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  gap: 0;
+}
+
+/* Enhanced Message List */
+.messageList {
+  border-collapse: separate !important;
+  border-spacing: 0 4px !important;
+  background: transparent !important;
+}
+
+.messageList tr {
+  background: var(--mythofy-surface) !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+  margin-bottom: 4px !important;
+}
+
+.messageList tr:hover {
+  background: linear-gradient(135deg, var(--mythofy-hover), rgba(249, 115, 22, 0.1)) !important;
+  transform: translateX(4px) !important;
+  box-shadow: 0 2px 12px var(--mythofy-shadow) !important;
+}
+
+.messageList tr.selected {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(249, 115, 22, 0.1)) !important;
+  border-left: 4px solid var(--mythofy-primary) !important;
+}
+
+/* Message Priority Indicators */
+.messageList tr.priority-high::before {
+  content: "🔥";
+  position: absolute;
+  left: 8px;
+  font-size: 16px;
+}
+
+.messageList tr.priority-normal::before {
+  content: "📧";
+  position: absolute;
+  left: 8px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* Unread Message Styling */
+.messageList tr.unread {
+  font-weight: 600 !important;
+  border-left: 4px solid var(--mythofy-secondary) !important;
+}
+
+.messageList tr.unread .messageSubject {
+  color: var(--mythofy-primary) !important;
+}
+
+/* Message Actions */
+.message-actions {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.messageList tr:hover .message-actions {
+  opacity: 1;
+}
+
+.message-action-btn {
+  background: var(--mythofy-surface);
+  border: 1px solid var(--mythofy-border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.message-action-btn:hover {
+  background: var(--mythofy-primary);
+  color: white;
+}
+
+/* Search Enhancement */
+.search-container {
+  position: relative;
+  margin: 16px;
+}
+
+.search-input {
+  background: var(--mythofy-surface) !important;
+  border: 2px solid var(--mythofy-border) !important;
+  border-radius: 25px !important;
+  padding: 12px 20px 12px 45px !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease !important;
+}
+
+.search-input:focus {
+  border-color: var(--mythofy-primary) !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1) !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--mythofy-text-secondary);
+  font-size: 16px;
+}
+
+/* Folder Sidebar Enhancements */
+.folder-list {
+  background: var(--mythofy-surface);
+  border-radius: 12px;
+  margin: 16px;
+  overflow: hidden;
+}
+
+.folder-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid var(--mythofy-border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.folder-item:hover {
+  background: var(--mythofy-hover);
+  padding-left: 20px;
+}
+
+.folder-item.active {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(249, 115, 22, 0.1));
+  border-left: 4px solid var(--mythofy-primary);
+  font-weight: 600;
+}
+
+.folder-icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.folder-count {
+  margin-left: auto;
+  background: var(--mythofy-primary);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Message Preview Pane */
+.message-preview {
+  background: var(--mythofy-surface);
+  border-radius: 12px;
+  margin: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px var(--mythofy-shadow);
+}
+
+.message-header {
+  border-bottom: 2px solid var(--mythofy-border);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.message-from {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--mythofy-primary);
+  margin-bottom: 8px;
+}
+
+.message-subject {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--mythofy-text);
+  margin-bottom: 8px;
+}
+
+.message-date {
+  color: var(--mythofy-text-secondary);
+  font-size: 14px;
+}
+
+.message-body {
+  line-height: 1.6;
+  color: var(--mythofy-text);
+}
+
+/* Compose Window Enhancements */
+.compose-window {
+  max-width: 800px;
+  margin: 20px auto;
+  background: var(--mythofy-surface);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px var(--mythofy-shadow);
+}
+
+.compose-header {
+  background: var(--mythofy-gradient);
+  color: white;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: between;
+  align-items: center;
+}
+
+.compose-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.compose-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.compose-body {
+  padding: 24px;
+}
+
+.compose-field {
+  margin-bottom: 16px;
+}
+
+.compose-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--mythofy-text);
+}
+
+.compose-field input,
+.compose-field textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--mythofy-border);
+  border-radius: 8px;
+  background: var(--mythofy-bg);
+  color: var(--mythofy-text);
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.compose-field input:focus,
+.compose-field textarea:focus {
+  border-color: var(--mythofy-primary);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+  outline: none;
+}
+
+/* Attachment Handling */
+.attachment-zone {
+  border: 2px dashed var(--mythofy-border);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  background: var(--mythofy-subtle-gradient);
+  margin: 16px 0;
+  transition: all 0.3s ease;
+}
+
+.attachment-zone:hover,
+.attachment-zone.dragover {
+  border-color: var(--mythofy-primary);
+  background: rgba(220, 38, 38, 0.05);
+}
+
+.attachment-icon {
+  font-size: 48px;
+  color: var(--mythofy-text-secondary);
+  margin-bottom: 16px;
+}
+
+/* Phoenix Fire Animation */
+@keyframes phoenixGlow {
+  0% { box-shadow: 0 0 5px rgba(220, 38, 38, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.8), 0 0 30px rgba(251, 191, 36, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(220, 38, 38, 0.5); }
+}
+
+.phoenix-glow {
+  animation: phoenixGlow 2s ease-in-out infinite;
+}
+
+/* Quick Actions Bar */
+.quick-actions {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: var(--mythofy-surface);
+  border-radius: 12px;
+  margin: 16px;
+  box-shadow: 0 2px 12px var(--mythofy-shadow);
+}
+
+.quick-action {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  background: var(--mythofy-bg);
+  border: 2px solid var(--mythofy-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.quick-action:hover {
+  border-color: var(--mythofy-primary);
+  background: rgba(220, 38, 38, 0.05);
+}
+
+/* Status Indicators */
+.status-online { color: #10b981; }
+.status-away { color: #f59e0b; }
+.status-busy { color: #ef4444; }
+.status-offline { color: #6b7280; }

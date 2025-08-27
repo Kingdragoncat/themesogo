@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(copy:*)",
+      "Bash(ren:*)",
+      "Bash(move mythofy-logo-dark-160x40.png mythofy-logo-temp-160x40.png)",
+      "Bash(move mythofy-logo-dark-240x80.png mythofy-logo-temp-240x80.png)",
+      "Bash(move mythofy-logo-dark-80x24.png mythofy-logo-temp-80x24.png)",
+      "Bash(move mythofy-logo-light-160x40.png mythofy-logo-dark-160x40.png)",
+      "Bash(move mythofy-logo-light-240x80.png mythofy-logo-dark-240x80.png)",
+      "Bash(move mythofy-logo-light-80x24.png mythofy-logo-dark-80x24.png)",
+      "Bash(move mythofy-logo-temp-160x40.png mythofy-logo-light-160x40.png)",
+      "Bash(move mythofy-logo-temp-240x80.png mythofy-logo-light-240x80.png)",
+      "Bash(move mythofy-logo-temp-80x24.png mythofy-logo-light-80x24.png)",
+      "WebFetch(domain:docs.mailcow.email)",
+      "WebFetch(domain:gist.github.com)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

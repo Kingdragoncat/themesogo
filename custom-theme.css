@@ -1,0 +1,347 @@
+/* MYTHOFY SOGo Theme - Clean & Professional */
+
+/* Material Design Theme Variables - SOGo Compatible */
+.md-default-theme {
+  /* Primary Red/Orange Fire Colors */
+  --md-primary-50: #fef2f2;
+  --md-primary-100: #fee2e2; 
+  --md-primary-200: #fecaca;
+  --md-primary-300: #fca5a5;
+  --md-primary-400: #f87171;
+  --md-primary-500: #dc2626;
+  --md-primary-600: #b91c1c;
+  --md-primary-700: #991b1b;
+  --md-primary-800: #7f1d1d;
+  --md-primary-900: #450a0a;
+  --md-primary-A100: #ff8a80;
+  --md-primary-A200: #ff5252;
+  --md-primary-A400: #ff1744;
+  --md-primary-A700: #d50000;
+  
+  /* Accent Orange Colors */
+  --md-accent-50: #fff7ed;
+  --md-accent-100: #ffedd5;
+  --md-accent-200: #fed7aa;
+  --md-accent-300: #fdba74;
+  --md-accent-400: #fb923c;
+  --md-accent-500: #f97316;
+  --md-accent-600: #ea580c;
+  --md-accent-700: #c2410c;
+  --md-accent-800: #9a3412;
+  --md-accent-900: #7c2d12;
+  --md-accent-A100: #ffb74d;
+  --md-accent-A200: #ff9800;
+  --md-accent-A400: #ff6f00;
+  --md-accent-A700: #e65100;
+
+  /* Background & Text */
+  --md-background-50: #ffffff;
+  --md-background-100: #fafaf9;
+  --md-background-200: #f5f5f4;
+  --md-background-300: #e7e5e4;
+  --md-background-400: #d6d3d1;
+  --md-background-500: #a8a29e;
+  --md-background-600: #78716c;
+  --md-background-700: #57534e;
+  --md-background-800: #44403c;
+  --md-background-900: #1c1917;
+
+  /* SOGo Specific Colors */
+  --md-warn-50: #fef7f0;
+  --md-warn-100: #feecdc;
+  --md-warn-200: #fcd9bd;
+  --md-warn-300: #fdba74;
+  --md-warn-400: #fb923c;
+  --md-warn-500: #f97316;
+  --md-warn-600: #ea580c;
+  --md-warn-700: #c2410c;
+  --md-warn-800: #9a3412;
+  --md-warn-900: #7c2d12;
+}
+
+/* Dark Theme */
+.md-dark-theme {
+  --md-primary-50: #450a0a;
+  --md-primary-100: #7f1d1d;
+  --md-primary-200: #991b1b;
+  --md-primary-300: #b91c1c;
+  --md-primary-400: #dc2626;
+  --md-primary-500: #f87171;
+  --md-primary-600: #fca5a5;
+  --md-primary-700: #fecaca;
+  --md-primary-800: #fee2e2;
+  --md-primary-900: #fef2f2;
+
+  --md-accent-50: #7c2d12;
+  --md-accent-100: #9a3412;
+  --md-accent-200: #c2410c;
+  --md-accent-300: #ea580c;
+  --md-accent-400: #f97316;
+  --md-accent-500: #fb923c;
+  --md-accent-600: #fdba74;
+  --md-accent-700: #fed7aa;
+  --md-accent-800: #ffedd5;
+  --md-accent-900: #fff7ed;
+
+  --md-background-50: #0c0a09;
+  --md-background-100: #1c1917;
+  --md-background-200: #292524;
+  --md-background-300: #44403c;
+  --md-background-400: #57534e;
+  --md-background-500: #78716c;
+  --md-background-600: #a8a29e;
+  --md-background-700: #d6d3d1;
+  --md-background-800: #e7e5e4;
+  --md-background-900: #f5f5f4;
+}
+
+/* SOGo Base Styling */
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif !important;
+  background-color: var(--md-background-50) !important;
+  color: var(--md-background-900) !important;
+}
+
+/* SOGo Navigation Bar */
+.navbar, .sg-navbar {
+  background: linear-gradient(135deg, var(--md-primary-500) 0%, var(--md-accent-500) 100%) !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar .navbar-brand, .navbar .navbar-nav > li > a {
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 4px;
+}
+
+/* SOGo Sidebar */
+.leftcolumn, .sg-sidebar {
+  background-color: var(--md-background-100) !important;
+  border-right: 1px solid var(--md-background-300) !important;
+}
+
+.leftcolumn ul li, .sg-sidebar ul li {
+  border-bottom: 1px solid var(--md-background-200) !important;
+}
+
+.leftcolumn ul li:hover, .sg-sidebar ul li:hover {
+  background-color: var(--md-accent-50) !important;
+}
+
+.leftcolumn ul li a, .sg-sidebar ul li a {
+  color: var(--md-background-800) !important;
+  padding: 12px 16px !important;
+  font-weight: 500 !important;
+}
+
+/* SOGo Main Content */
+.rightcolumn, .sg-main {
+  background-color: var(--md-background-50) !important;
+}
+
+/* SOGo Cards/Panels */
+.panel, .card {
+  background-color: var(--md-background-100) !important;
+  border: 1px solid var(--md-background-200) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.panel-heading, .card-header {
+  background: linear-gradient(135deg, var(--md-background-100) 0%, var(--md-background-200) 100%) !important;
+  border-bottom: 1px solid var(--md-background-300) !important;
+  color: var(--md-background-800) !important;
+  font-weight: 600 !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+/* SOGo Buttons */
+.btn, button {
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--md-primary-500) 0%, var(--md-accent-500) 100%) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--md-primary-600) 0%, var(--md-accent-600) 100%) !important;
+  transform: translateY(-1px) !important;
+}
+
+.btn-default, .btn-secondary {
+  background-color: var(--md-background-100) !important;
+  border: 1px solid var(--md-background-300) !important;
+  color: var(--md-background-800) !important;
+}
+
+.btn-default:hover, .btn-secondary:hover {
+  background-color: var(--md-background-200) !important;
+  border-color: var(--md-primary-500) !important;
+}
+
+/* SOGo Forms */
+.form-control, input, textarea, select {
+  background-color: var(--md-background-50) !important;
+  border: 2px solid var(--md-background-300) !important;
+  color: var(--md-background-900) !important;
+  border-radius: 6px !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.form-control:focus, input:focus, textarea:focus, select:focus {
+  border-color: var(--md-primary-500) !important;
+  box-shadow: 0 0 0 2px var(--md-primary-100) !important;
+  outline: none !important;
+}
+
+/* SOGo Tables */
+.table, table {
+  background-color: var(--md-background-100) !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+
+.table thead th, table thead th {
+  background: linear-gradient(135deg, var(--md-background-200) 0%, var(--md-background-300) 100%) !important;
+  color: var(--md-background-800) !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid var(--md-background-400) !important;
+}
+
+.table tbody tr:hover, table tbody tr:hover {
+  background-color: var(--md-accent-50) !important;
+}
+
+/* SOGo Message List */
+.messageList {
+  background-color: var(--md-background-100) !important;
+  border-radius: 6px !important;
+}
+
+.messageList tr {
+  border-bottom: 1px solid var(--md-background-200) !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.messageList tr:hover {
+  background-color: var(--md-accent-50) !important;
+}
+
+.messageList tr.selected {
+  background-color: var(--md-primary-50) !important;
+  border-left: 3px solid var(--md-primary-500) !important;
+}
+
+.messageList tr.unread {
+  font-weight: 600 !important;
+  border-left: 3px solid var(--md-accent-500) !important;
+}
+
+/* SOGo Calendar */
+.calendar, .sg-calendar {
+  background-color: var(--md-background-100) !important;
+  border-radius: 6px !important;
+}
+
+.calendar .day, .sg-calendar .day {
+  border: 1px solid var(--md-background-200) !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.calendar .day:hover, .sg-calendar .day:hover {
+  background-color: var(--md-accent-50) !important;
+}
+
+.calendar .today, .sg-calendar .today {
+  background-color: var(--md-primary-500) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* SOGo Progress Indicators */
+.progress {
+  background-color: var(--md-background-200) !important;
+  border-radius: 4px !important;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--md-primary-500) 0%, var(--md-accent-500) 100%) !important;
+}
+
+/* SOGo Tooltips */
+.tooltip-inner {
+  background-color: var(--md-background-800) !important;
+  color: var(--md-background-100) !important;
+  border-radius: 6px !important;
+}
+
+/* SOGo Modal Dialogs */
+.modal-content {
+  background-color: var(--md-background-100) !important;
+  border: 1px solid var(--md-background-300) !important;
+  border-radius: 8px !important;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, var(--md-background-200) 0%, var(--md-background-300) 100%) !important;
+  border-bottom: 1px solid var(--md-background-400) !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+/* SOGo Login Page */
+.loginContainer {
+  background: linear-gradient(135deg, var(--md-background-50) 0%, var(--md-background-100) 100%) !important;
+}
+
+.loginBox {
+  background-color: var(--md-background-100) !important;
+  border: 1px solid var(--md-background-300) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* SOGo Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--md-background-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-background-400);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-primary-500);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand, .sg-navbar-brand {
+    font-size: 16px !important;
+  }
+  
+  .panel, .card {
+    margin: 8px !important;
+    border-radius: 6px !important;
+  }
+  
+  .btn {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+  }
+}
